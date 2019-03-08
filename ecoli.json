@@ -1,7 +1,7 @@
 {
   "ecoliWorkflow.sam_files": 
 		[
-		"alignments/sim_reads_aligned_1.sam",
-		"alignments/sim_reads_aligned_2.sam"
+		"gs://cromwellbucket4221/alignments/sim_reads_aligned_1.sam",
+		"gs://cromwellbucket4221/alignments/sim_reads_aligned_2.sam"
 		]
 }
