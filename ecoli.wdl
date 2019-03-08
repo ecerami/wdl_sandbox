@@ -47,14 +47,17 @@ task indexBam {
 }
 
 workflow ecoliWorkflow {
-	File sam_input
-	call convertSam2Bam { 
-		input: sam_input=sam_input
-	}
-	call sortBam {
-		input: bam_input=convertSam2Bam.aligned_bam
-	}
-	call indexBam {
-		input: aligned_sorted_bam_input=sortBam.aligned_sorted_bam
+	Array[File] sam_files
+
+	scatter(sam_file in sam_files) {
+		call convertSam2Bam { 
+			input: sam_input=sam_file
+		}
+		call sortBam {
+			input: bam_input=convertSam2Bam.aligned_bam
+		}
+		call indexBam {
+			input: aligned_sorted_bam_input=sortBam.aligned_sorted_bam
+		}
 	}
 }

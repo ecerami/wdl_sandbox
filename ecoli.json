@@ -1,4 +1,7 @@
 {
-  "ecoliWorkflow.sam_input": "alignments/sim_reads_aligned_1.sam"
+  "ecoliWorkflow.sam_files": 
+		[
+		"alignments/sim_reads_aligned_1.sam",
+		"alignments/sim_reads_aligned_2.sam"
+		]
 }
-
