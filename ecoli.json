@@ -1,7 +1,7 @@
 {
-  "ecoliWorkflow.sam_files": 
+	"ecoliWorkflow.simulated_read_files": 
 		[
-		"gs://cromwellbucket4221/alignments/sim_reads_aligned_1.sam",
-		"gs://cromwellbucket4221/alignments/sim_reads_aligned_2.sam"
-		]
+		"simulated_reads/sim_reads_1.fq"
+		],
+	"ecoliWorkflow.genomeDir":  "/Users/ecerami/dev/wdl_sandbox"
 }
