@@ -10,7 +10,7 @@ task convertSam2Bam {
 	}
 
 	runtime {
-		docker: "mgibio/samtools:1.9" 
+		docker: 'drjimbo/cidc-bwa-samtools:latest' 
 	}
 }
 
@@ -26,7 +26,7 @@ task sortBam {
 	}
 
 	runtime {
-		docker: "mgibio/samtools:1.9" 
+		docker: "drjimbo/cidc-bwa-samtools:latest" 
 	}
 }
 
@@ -42,7 +42,7 @@ task indexBam {
 	}	
 
 	runtime {
-		docker: "mgibio/samtools:1.9" 
+		docker: "drjimbo/cidc-bwa-samtools:latest" 
 	}
 }
 
