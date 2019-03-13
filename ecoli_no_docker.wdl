@@ -11,7 +11,6 @@ task align2Genome {
 	}
 
 	runtime {
-		docker: 'biocontainers/bowtie2:v2.2.9_cv2' 
 	}
 }
 
@@ -27,7 +26,6 @@ task convertSam2Bam {
 	}
 
 	runtime {
-		docker: 'drjimbo/cidc-bwa-samtools:latest' 
 	}
 }
 
@@ -43,7 +41,6 @@ task sortBam {
 	}
 
 	runtime {
-		docker: "drjimbo/cidc-bwa-samtools:latest" 
 	}
 }
 
@@ -59,7 +56,6 @@ task indexBam {
 	}	
 
 	runtime {
-		docker: "drjimbo/cidc-bwa-samtools:latest" 
 	}
 }
 
@@ -77,7 +73,6 @@ task callVariants1 {
 	}
 
 	runtime {
-		docker: "drjimbo/cidc-bwa-samtools:latest" 
 	}
 }
 
@@ -93,7 +88,6 @@ task callVariants2 {
 	}
 
 	runtime {
-		docker: "biocontainers/bcftools:v1.5_cv2" 
 	}
 }
 

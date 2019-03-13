@@ -1,7 +1,0 @@
-{
-	"ecoliWorkflow.simulated_read_files": 
-		[
-		"simulated_reads/sim_reads_1.fq"
-		],
-	"ecoliWorkflow.genomeDir":  "/Users/ecerami/dev/wdl_sandbox"
-}
