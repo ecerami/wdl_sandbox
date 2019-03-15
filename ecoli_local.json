@@ -1,17 +1,17 @@
 {
-	"ecoliWorkflow.simulated_read_files": 
-		[
-		"simulated_reads/sim_reads_1.fq"
-		],
-	"ecoliWorkflow.align2Genome.index_files":  
-		[
-			"indexes/e_coli",
-			"indexes/e_coli.1.bt2",
-			"indexes/e_coli.2.bt2",
-			"indexes/e_coli.3.bt2",
-			"indexes/e_coli.4.bt2",
-			"indexes/e_coli.rev.1.bt2",
-			"indexes/e_coli.rev.2.bt2"
-		],
-	"ecoliWorkflow.callVariants1.ecoli_genome": "genomes/NC_008253.fna"
+  "ecoliWorkflow.simulated_read_files": 
+    [
+    "simulated_reads/sim_reads_1.fq"
+    ],
+  "ecoliWorkflow.align2Genome.index_files":  
+    [
+      "indexes/e_coli",
+      "indexes/e_coli.1.bt2",
+      "indexes/e_coli.2.bt2",
+      "indexes/e_coli.3.bt2",
+      "indexes/e_coli.4.bt2",
+      "indexes/e_coli.rev.1.bt2",
+      "indexes/e_coli.rev.2.bt2"
+    ],
+  "ecoliWorkflow.callVariants1.ecoli_genome": "genomes/NC_008253.fna"
 }

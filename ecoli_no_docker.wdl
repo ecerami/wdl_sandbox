@@ -69,7 +69,7 @@ task callVariants1 {
 	}
 
 	output {
-		File bcf_variants_file = "variants.bcf"
+		File bcf_file = "variants.bcf"
 	}
 
 	runtime {
@@ -77,14 +77,14 @@ task callVariants1 {
 }
 
 task callVariants2 {
-	File bcf_variants_file
+	File bcf_file
 	
 	command {
-		bcftools call -c -v ${bcf_variants_file} > variants.vcf
+		bcftools call -c -v ${bcf_file} > variants.vcf
 	}
 
 	output {
-		File sam = "variants.vcf"
+		File vcf_file = "variants.vcf"
 	}
 
 	runtime {
@@ -112,7 +112,7 @@ workflow ecoliWorkflow {
 			aligned_sorted_bam_index_file=indexBam.aligned_sorted_bam_index_file
 		}
 		call callVariants2 {
-			input: bcf_variants_file=callVariants1.bcf_variants_file
+			input: bcf_file=callVariants1.bcf_file
 		}
 	}
 }
