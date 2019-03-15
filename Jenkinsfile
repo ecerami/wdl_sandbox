@@ -1,9 +1,8 @@
 pipeline {
-    agent { docker { image 'python:2.7.10' } }
+    agent { docker { image 'grihabor/pytest:python3.7-alpine ' } }
     stages {
         stage('test') {
             steps {
-                sh 'pip install pytest'
                 sh './test.sh'
             }
         }
