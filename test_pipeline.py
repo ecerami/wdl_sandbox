@@ -56,7 +56,8 @@ def validate_vcf(vcf_file):
 
 # Test the Pipeline (local, no docker)
 def test_pipeline_local_no_docker():
-	cromwell_id = submit_pipeline("ecoli_no_docker.wdl", "ecoli_local.json")
+	cromwell_id = submit_pipeline("/Users/ecerami/dev/wdl_sandbox/ecoli_no_docker.wdl", 
+		"/Users/ecerami/dev/wdl_sandbox/ecoli_local.json")
 	status = "Running"
 	while status == "Running" or status == "Submitted":
 		time.sleep(5)
