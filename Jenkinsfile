@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'grihabor/pytest:python3.7-alpine' } }
+    agent { docker { image 'ecerami/wdl_test:latest' } }
     stages {
         stage('test') {
             steps {
