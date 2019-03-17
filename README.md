@@ -2,7 +2,7 @@
 
 ## About
 
-This git repo contains a sandbox learning and running Cromwell + WDL.
+This git repo contains a sandbox for learning and running Cromwell + WDL.
 
 ## Installation
 
