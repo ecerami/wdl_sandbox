@@ -65,10 +65,25 @@ The results of your run will now be somewhere under `cromwell-executions`.
 
 ## Part IV:  Run the WDL Pipeline via Google Genomics API
 
-[Under Construction]
+There is a lot to set up via Google Genomics API.  Start with the instructions here:  https://cromwell.readthedocs.io/en/stable/tutorials/PipelinesApi101/
+
+Then, prepare a Google bucket.
+
+* Create a google bucket, such as:  gs://cromwellbucket4221/.
+* Copy `simulated_reads`, `genomes` and `indexes` to your google bucket.
+* Modify `conf/config.txt` with your bucket name.
+* Modify `cong/google.conf` with your project name and bucket name.
+
+Then, run:  `bin/run_ecoli_cloud.sh`
+
+Wait a few minutes.  This takes longer because of the overhead associated with docker and Google Genomics API.
+
+The results of your run will now be somewhere in your google bucket under `cromwell-executions`.
 
 ## Test the WDL Pipeline
 
 [Under Construction]
 
 ## Test the WDL Pipeline via Jenkins
+
+[Under Construction]
