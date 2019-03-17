@@ -82,8 +82,9 @@ The results of your run will now be in your google bucket under `cromwell-execut
 
 ## Test the WDL Pipeline
 
-[Under Construction]
+To run integration tests for a WDL pipeline:
 
-## Test the WDL Pipeline via Jenkins
+* Start the Cromwell server:  `java -jar cromwell-38.jar server`
+* run `bin/test.sh`
 
-[Under Construction]
+This will runs all tests under `tests`.  WDL pipelines will be submitted to the Cromwell Server.

@@ -5,7 +5,7 @@ from py_cromwell.server import CromwellServer
 # Test the E-Coli Pipeline
 def test_ecoli_local_pipepline():
 	server = CromwellServer()
-	cromwell_id = server.submit_pipeline("ecoli_no_docker.wdl", "ecoli_local.json")
+	cromwell_id = server.submit_pipeline("wdl/ecoli_no_docker.wdl", "wdl/ecoli_local.json")
 	vcf_file = server.get_output(cromwell_id, "ecoliWorkflow.callVariants2.vcf_file")
 	validate_vcf(vcf_file)
 
