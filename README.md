@@ -55,7 +55,7 @@ The results of your run will now be somewhere under `cromwell-executions`.
 
 Next, try running the WDL pipeline via Cromwell, but with Docker.
 
-* as before, make sure the at comwell-xx.jar and womtool-xx.jar are in the root directory of wdl_sandbox.
+* as before, make sure the at `comwell-xx.jar` and `womtool-xx.jar` are in the root directory of wdl_sandbox.
 * make sure you have installed docker.
 * run `bin/run_ecoli_local_with_docker.sh`
 
