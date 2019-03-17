@@ -1,4 +1,5 @@
 *.jar
+**/*.pyc
 cromwell-executions
 cromwell-workflow-logs
 .DS_Store

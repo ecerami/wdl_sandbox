@@ -1,3 +1,4 @@
+rm -f alignments/*.sam
 rm -f alignments/*.bam
 rm -f alignments/*.bai
 rm -f alignments/*.bcf

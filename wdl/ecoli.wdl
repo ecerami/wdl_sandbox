@@ -1,3 +1,7 @@
+# e-coli NGS Pipeline
+# Takes a set of simulated reads, aligns these to
+# the e-coli genome and calls variants
+
 task align2Genome {
 	File simulated_read_file
 	Array[File] index_files
