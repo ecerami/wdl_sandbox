@@ -2,11 +2,15 @@ import subprocess
 import shlex
 import json
 import time
+import os
 
 # Cromwell Server -- Python Client
 class CromwellServer:
 	def __init__(self):
-		self.__cromwell_base = "http://localhost:8000/api/workflows/v1"
+		if os.environ['JENKINS_WDL'] == "true":
+			self.__cromwell_base = "http://docker.for.mac.localhost:8000/api/workflows/v1"
+		else:
+			self.__cromwell_base = "http://localhost:8000/api/workflows/v1"
 
 	# Run a subprocess and capture the JSON Response
 	def __run_subprocess(self, command_line):

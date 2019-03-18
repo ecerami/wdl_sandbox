@@ -1,4 +1,8 @@
 pipeline {
+    environment {
+       JENKINS_WDL = 'true'
+    }
+
     agent { docker { 
             image 'ecerami/wdl_test:latest'
             args '-v /Users/ecerami/dev/wdl_sandbox/cromwell-executions/ecoliWorkflow/:/Users/ecerami/dev/wdl_sandbox/cromwell-executions/ecoliWorkflow/'
